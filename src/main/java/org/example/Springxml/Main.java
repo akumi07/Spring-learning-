@@ -13,14 +13,17 @@ public class Main {
         //ye jo bracket me niche alien likhe hai application context yhi naam khojega spring.xml me
         Alien obj1= (Alien) context.getBean("alien1");
         obj1.compile();
-        obj1.age=21;
+        System.out.println(obj1.getAge());
 
 
-        Alien obj2= (Alien) context.getBean("alien1");
-        obj2.compile();
-        System.out.println(obj2.age);
-        System.out.println("Hello, World!");
+
+//        Alien obj2= (Alien) context.getBean("alien1");
+//        obj2.compile();
+//        System.out.println(obj2.age);
+//        System.out.println("Hello, World!");
 
         //upar same bean ki id hai to object jitni baar yha diffrent name se bnale refer to usi id k object ko kr rha hai isliye age obj2 me set kiye bina obj1 wli print hogyi
+        //Scope hota hai bean k sath define krte hai ek hota singelton(default) jisme ki ek hi object ko refer krta hai get context me same id hone pe
+        //second hota hai prototype jisme agar get context call kiya to naya object bnega bhale hi id kyu na same ho bean ki
     }
 }
