@@ -8,6 +8,8 @@
 
     <!-- Yaha hum bean banate hai. Spring is bean ko manage karta hai using IoC container -->
 
-    <bean id="alien" class="org.example.Springxml.Alien"/>
+    <bean id="alien1" class="org.example.Springxml.Alien"/>
+    <bean id="alien2" class="org.example.Springxml.Alien"/>
+    <bean id="lap" class="org.example.Springxml.Laptop"/>
 
 </beans>
