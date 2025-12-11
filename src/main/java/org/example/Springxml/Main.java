@@ -9,7 +9,8 @@ public class Main {
        //application context is superset of bean factory ye hi object load krwata hai container jisses ioc and Di hopata hai.
         //ye spring container bnata hai overall
         ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
-        //ye jo bracket me niche alien like hai application context yhi naam khojega spring.xml me
+        //line 11 me jo likha hai usme spring .xml me context dete hi jo jo class ke beans declare honge spring .xml me unke unke object bn jate hai (Agr chk krna hai to line 14 ko comment krdo get bean wala tobhi dekhna constructor call hojata hai.)
+        //ye jo bracket me niche alien likhe hai application context yhi naam khojega spring.xml me
         Alien obj= (Alien) context.getBean("alien");
         obj.compile();
         System.out.println("Hello, World!");
