@@ -10,7 +10,7 @@
 
 <!--    <bean id="alien1" class="org.example.Springxml.Alien" scope="prototype"/>-->
     <bean id="alien1" class="org.example.Springxml.Alien">
-<!--        //yha private property ki value set kr diye-->
+<!--        //yha private property ki value set kr diye or setter call krta hai usse set krta hai isliye setter injection -->
         <property name="age" value="21"/>
     </bean>
     <bean id="lap" class="org.example.Springxml.Laptop"/>
