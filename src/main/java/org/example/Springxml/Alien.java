@@ -5,6 +5,12 @@ public class Alien {
     private int age ;
     private Laptop laptop;
 
+    public Alien(Laptop laptop, int age) {
+        System.out.println("Param constructor called");
+        this.laptop = laptop;
+        this.age = age;
+    }
+
     public Alien(){
         System.out.println("Alien Object Created");
     }
