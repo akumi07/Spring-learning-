@@ -12,6 +12,8 @@
     <bean id="alien1" class="org.example.Springxml.Alien">
 <!--        //yha private property ki value set kr diye or setter call krta hai usse set krta hai isliye setter injection -->
         <property name="age" value="21"/>
+<!--        yha ref me niche laptop ka jo bean hai uski id deni hai -->
+        <property name="laptop" ref="lap"/>
     </bean>
     <bean id="lap" class="org.example.Springxml.Laptop"/>
 
