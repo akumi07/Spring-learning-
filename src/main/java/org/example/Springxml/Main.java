@@ -10,7 +10,7 @@ public class Main {
         //ye spring container bnata hai overall
         ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
         //line 11 me jo likha hai usme spring .xml me context dete hi jo jo class ke beans declare honge spring .xml me unke unke object bn jate hai (Agr chk krna hai to line 14 ko comment krdo get bean wala tobhi dekhna constructor call hojata hai.)
-        //ye jo bracket me niche alien likhe hai application context yhi naam khojega spring.xml me
+        //ye jo bracket me niche alien1 likhe hai application context yhi naam khojega spring.xml me
         Alien obj1= (Alien) context.getBean("alien1");
         obj1.compile();
         System.out.println(obj1.getAge());
