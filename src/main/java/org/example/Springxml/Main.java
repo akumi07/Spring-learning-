@@ -10,8 +10,14 @@ public class Main {
               //java based configuration
      ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
      //we can give name to bean so that it doent get confuse which bean to call
-     Desktop dt=context.getBean("comp2",Desktop.class);
-     dt.compile();
+//     Desktop dt=context.getBean("comp2",Desktop.class);
+//     dt.compile();
+        Desktop dt=context.getBean(Desktop.class);
+        dt.compile();
+        Desktop dt1=context.getBean(Desktop.class);
+        dt1.compile();
+
+
 
 
 
