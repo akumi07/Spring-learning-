@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) {
               //java based configuration
      ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
-
-     Desktop dt=context.getBean(Desktop.class);
+     //we can give name to bean so that it doent get confuse which bean to call
+     Desktop dt=context.getBean("comp2",Desktop.class);
      dt.compile();
 
 
