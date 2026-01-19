@@ -9,13 +9,19 @@ public class Main {
     public static void main(String[] args) {
               //java based configuration
      ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
+
+     Alien obj1=context.getBean(Alien.class);
+     obj1.setAge(21);
+        System.out.println(obj1.getAge());
+        obj1.code();
+
      //we can give name to bean so that it doent get confuse which bean to call
 //     Desktop dt=context.getBean("comp2",Desktop.class);
 //     dt.compile();
-        Desktop dt=context.getBean(Desktop.class);
-        dt.compile();
-        Desktop dt1=context.getBean(Desktop.class);
-        dt1.compile();
+//        Desktop dt=context.getBean(Desktop.class);
+//        dt.compile();
+//        Desktop dt1=context.getBean(Desktop.class);
+//        dt1.compile();
 
 
 
