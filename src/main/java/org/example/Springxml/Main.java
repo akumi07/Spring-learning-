@@ -10,7 +10,7 @@ public class Main {
               //java based configuration
      ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
 
-     Alien obj1=context.getBean(Alien.class);
+    Alien obj1=context.getBean(Alien.class);
      obj1.setAge(21);
         System.out.println(obj1.getAge());
         obj1.code();

@@ -1,5 +1,10 @@
 package org.example.Springxml;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
+
 public class Alien {
 
     private int age ;
